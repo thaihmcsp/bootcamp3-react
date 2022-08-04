@@ -1,0 +1,10 @@
+export function Header ( props ) {
+    console.log(props);
+    return ( 
+        <div>
+
+            Header
+        </div>
+    )
+}
+

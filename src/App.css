@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+    width: 400px;
+    margin: auto;
+}
+
+.expenseItem{
+    display: flex;
+    justify-content: space-between;
+}
