@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import 'antd/dist/antd.css'
 import Home from './component/Home';
-import SignIn from './component/SignIn';
+import SignIn from './pages/signIn/SignIn';
+import SignUp from './pages/signUp/SignUp';
 import './component/todoList/todo.css';
 import Wallet from './component/wallet/Wallet';
 import Parent from './component/Parent';
@@ -17,7 +18,8 @@ import Order from './component/antd/outlet/Order';
 import Level1 from './component/nested/Level1';
 import data from './data.json'
 import User1 from './component/user/User'
-console.log(data);
+import Profile from './pages/profile/Profile';
+
 
 function App () {
     
@@ -39,9 +41,11 @@ function App () {
                     <Route path='/wallet' element={<Wallet/>}/>
                     <Route path='/test' element={<Test/>}/>
                     <Route path='/user' element={<User1/>}/>
+                    <Route path='/profile' element={<Profile/>}/>
                 </Route>
-                <Route path='/sign-in' element={<SignIn/>}/>
                 <Route path ='/level' element={<Level1/>}/>
+                <Route path='/sign-in' element={<SignIn/>}/>
+                <Route path ='/sign-up' element={<SignUp/>}/>
 
                 <Route path='/user' element={<Info/>}>
                     <Route path='info' element={<User/>}/>

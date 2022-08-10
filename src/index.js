@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import indexReducer from './component/redux/reducers/indexReducer';
+import Shopping from './Shopping';
 // import {configureStore} from '@reduxjs/toolkit'
 // import userSlice from './component/redux/reducers/userReducer';
 // import ProductSlice from './component/redux/reducers/productReducer';
@@ -22,7 +23,7 @@ const store = createStore(indexReducer)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
-        <App />
+        <Shopping />
     </Provider>
 );
 
